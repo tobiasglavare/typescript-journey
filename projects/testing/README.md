@@ -1,4 +1,4 @@
-# Testing Practice (Weeks 13-14)
+# Testing Practice (Chapter 11)
 
 Learn and practice testing with TypeScript.
 
@@ -50,7 +50,7 @@ describe('MyFunction', () => {
 
 ## Exercises
 
-1. Write tests for your Week 5 generic store
+1. Write tests for your Chapter 5 generic store
 2. Add tests to your CLI tool project
 3. Write integration tests for your API server
 4. Practice mocking external dependencies

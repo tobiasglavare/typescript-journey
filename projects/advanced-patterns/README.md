@@ -1,4 +1,4 @@
-# Advanced Patterns (Weeks 15-16)
+# Advanced Patterns (Chapter 12)
 
 Explore advanced TypeScript patterns and techniques.
 

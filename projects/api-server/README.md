@@ -1,4 +1,4 @@
-# API Server Project (Weeks 11-12)
+# API Server Project (Chapter 10)
 
 Build a REST API server with TypeScript.
 

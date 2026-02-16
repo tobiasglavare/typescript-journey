@@ -1,4 +1,4 @@
-# CLI Tool Project (Weeks 9-10)
+# CLI Tool Project (Chapter 9)
 
 Build a command-line tool that solves a real problem.
 
