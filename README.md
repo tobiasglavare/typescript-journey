@@ -10,7 +10,7 @@ A structured plan to master TypeScript fundamentals and become a stronger develo
 
 | # | Chapter | Status |
 |---|---------|--------|
-| 1 | JavaScript Fundamentals | ⬜ |
+| 1 | JavaScript Fundamentals | ✅ |
 | 2 | TypeScript Basics | ⬜ |
 | 3 | Arrays & Functional Methods | ⬜ |
 | 4 | Async Programming | ⬜ |
