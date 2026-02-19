@@ -751,3 +751,13 @@ value!           // Non-null assertion
 4. **Optional properties:** Create a User interface with required name/email and optional phone/address.
 
 5. **Type narrowing:** Write a function that handles `string | string[]` input and always returns a string.
+
+6. **Readonly properties:** Create a `DatabaseConfig` interface where `host` and `port` are readonly (can't be changed after creation), and `maxConnections` is mutable.
+
+7. **Type alias vs interface:** Create both a type alias AND an interface for a `Point` with `x` and `y` coordinates. Then create a function that accepts either one.
+
+8. **Array typing:** Create a function `getFirst` that takes an array of numbers and returns the first element, or `undefined` if empty. Type it properly.
+
+9. **Object typing:** Create a `createUser` function that takes `name` (required) and `age` (optional) as parameters and returns an object with those properties plus a generated `id` string.
+
+10. **Intersection types:** Create two interfaces: `HasName` (with `name: string`) and `HasAge` (with `age: number`). Then create a type `Person` that combines both using `&`.
