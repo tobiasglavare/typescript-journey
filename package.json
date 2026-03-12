@@ -1,0 +1,28 @@
+{
+  "name": "tobiastypescript",
+  "version": "1.0.0",
+  "description": "A structured plan to master TypeScript fundamentals and become a stronger developer.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasglavare/tobiasTypescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasglavare/tobiasTypescript/issues"
+  },
+  "homepage": "https://github.com/tobiasglavare/tobiasTypescript#readme",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
