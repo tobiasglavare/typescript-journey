@@ -639,3 +639,4 @@ T extends (infer U)[] ? U : T   // Infer element type
 4. **Conditional type:** Create a type that extracts the resolved type from a Promise.
 
 5. **Event system:** Build a type-safe event emitter with typed events.
+

@@ -1,28 +1,13 @@
 {
-  "name": "tobiastypescript",
-  "version": "1.0.0",
-  "description": "A structured plan to master TypeScript fundamentals and become a stronger developer.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "name": "typescript-learning-journey",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tobiasglavare/tobiasTypescript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tobiasglavare/tobiasTypescript/issues"
-  },
-  "homepage": "https://github.com/tobiasglavare/tobiasTypescript#readme",
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "vitepress": "^1.6.3"
   }
 }

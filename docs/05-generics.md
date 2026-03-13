@@ -297,7 +297,7 @@ const c3: Container<boolean, string> = { value: true, count: "many" };
 
 TypeScript provides many generic utility types:
 
-### Partial<T>
+### `Partial<T>`
 Make all properties optional:
 
 ```typescript
@@ -318,7 +318,7 @@ updateUser("1", { name: "Bob" });  // ✅ OK
 updateUser("1", { age: 31 });      // ✅ OK
 ```
 
-### Required<T>
+### `Required<T>`
 Make all properties required:
 
 ```typescript
@@ -331,7 +331,7 @@ type RequiredConfig = Required<Config>;
 // { host: string; port: number; }
 ```
 
-### Readonly<T>
+### `Readonly<T>`
 Make all properties readonly:
 
 ```typescript
@@ -347,7 +347,7 @@ const user: ReadonlyUser = { name: "Alice", age: 30 };
 user.name = "Bob";  // ❌ Error: Cannot assign to 'name'
 ```
 
-### Pick<T, K>
+### `Pick<T, K>`
 Select specific properties:
 
 ```typescript
@@ -362,7 +362,7 @@ type PublicUser = Pick<User, "id" | "name" | "email">;
 // { id: string; name: string; email: string; }
 ```
 
-### Omit<T, K>
+### `Omit<T, K>`
 Remove specific properties:
 
 ```typescript
@@ -374,7 +374,7 @@ type UserWithoutId = Omit<User, "id" | "password">;
 ```
 
 
-### Record<K, V>
+### `Record<K, V>`
 Create object type with specific keys and value type:
 
 ```typescript
@@ -391,7 +391,7 @@ const codes: StatusCodes = {
 };
 ```
 
-### Extract<T, U> and Exclude<T, U>
+### `Extract<T, U>` and `Exclude<T, U>`
 
 ```typescript
 type AllTypes = string | number | boolean | null;
@@ -405,7 +405,7 @@ type NonNull = Exclude<AllTypes, null>;
 // string | number | boolean
 ```
 
-### NonNullable<T>
+### `NonNullable<T>`
 
 ```typescript
 type MaybeString = string | null | undefined;
@@ -413,7 +413,7 @@ type DefinitelyString = NonNullable<MaybeString>;
 // string
 ```
 
-### ReturnType<T> and Parameters<T>
+### `ReturnType<T>` and `Parameters<T>`
 
 ```typescript
 function createUser(name: string, age: number): User {
@@ -576,3 +576,4 @@ Parameters<F>       // Function parameter types
 4. **Type-safe pick:** Create a function that picks specific properties from an object.
 
 5. **Generic result type:** Implement a `Result<T, E>` type for error handling without exceptions.
+

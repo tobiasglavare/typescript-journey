@@ -489,7 +489,7 @@ promise.then((value: string) => {
 });
 ```
 
-### Awaited<T> utility type
+### `Awaited<T>` utility type
 
 ```typescript
 // Extract the resolved type from a Promise
@@ -678,3 +678,4 @@ fetchData()
 4. **Sequential processing:** Process items one at a time, collecting results.
 
 5. **Health checker:** Build a service that checks multiple endpoints and reports their status.
+

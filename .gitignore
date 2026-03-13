@@ -2,5 +2,7 @@
 .kiro/
 node_modules/
 dist/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
 *.js.map
 .DS_Store

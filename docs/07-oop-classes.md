@@ -681,8 +681,9 @@ class MyClass implements MyInterface { }
 
 2. **Shape Hierarchy:** Create an abstract Shape class with Circle, Rectangle, and Triangle subclasses.
 
-3. **Generic Repository:** Build a generic Repository<T> class with CRUD operations.
+3. **Generic Repository:** Build a generic `Repository<T>` class with CRUD operations.
 
 4. **Logger System:** Create a Logger interface and implement ConsoleLogger and FileLogger classes.
 
 5. **Resource Manager:** Extend the example to add RDS and Lambda resource types.
+
