@@ -18,7 +18,7 @@
 // Example: isString(42) returns false
 // Example: isString(null) returns false
 function isString(value: unknown): value is string {
-    // Your code here
+    return typeof value === "string"
 }
 
 // Task 2: Is non-empty array
