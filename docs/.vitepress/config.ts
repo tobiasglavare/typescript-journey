@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/typescript-journey/',
   title: 'TypeScript Learning Journey',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/typescript-journey/favicon.svg' }]
+  ],
   description: 'A structured plan to master TypeScript',
   themeConfig: {
     nav: [
