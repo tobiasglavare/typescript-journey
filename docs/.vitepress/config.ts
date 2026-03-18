@@ -6,8 +6,7 @@ export default defineConfig({
   description: 'A structured plan to master TypeScript',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Notes', link: '/notes' }
+      { text: 'Home', link: '/' }
     ],
     sidebar: [
       {
