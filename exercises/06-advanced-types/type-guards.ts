@@ -50,8 +50,14 @@ interface Server {
 }
 
 function isServer(value: unknown): value is Server {
-    // Check: typeof === "object", not null, has host (string), has port (number)
-    // Your code here
+    return (
+        typeof value === "object" &&
+        value !== null &&
+        "host" in value &&
+        "port" in value &&
+        typeof (value as Server).host === "string" &&
+        typeof (value as Server).port === "number"
+    )
 }
 
 // Task 4: Filter by type
@@ -61,9 +67,8 @@ function isServer(value: unknown): value is Server {
 // Example: filterStrings(["hello", 42, "world", 7]) returns ["hello", "world"]
 // Example: filterStrings([1, 2, 3]) returns []
 function filterStrings(items: (string | number)[]): string[] {
-    // Use .filter() with your isString type guard
-    // Your code here
-}
+    return items.filter(isString)
+    }
 
 // Test your implementations:
 // console.log(isString("hello"));           // true
