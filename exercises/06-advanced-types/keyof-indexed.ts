@@ -38,6 +38,7 @@ function pluck<T, K extends keyof T>(items: T[], key: K): T[K][] {
 function pick<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {
     const picked = {} as Pick<T, K>;
     for (const k of keys){
+        picked[k] = obj[k];
     }
     return picked
 }
@@ -55,13 +56,13 @@ interface ServerConfig {
 
 // TODO: Create a type that is just the type of the "tags" property
 // Should be Record<string, string>
-type ServerTags = unknown; // Replace "unknown" with the indexed access type
+type ServerTags = ServerConfig["tags"]; // Replace "unknown" with the indexed access type
 
 // TODO: Create a type that is the type of a single region
 // Should be "us-east-1" | "eu-west-1" | "ap-southeast-1"
 // Hint: ServerConfig["regions"] gives you the array type,
 //       then use [number] to get the element type
-type Region = unknown; // Replace "unknown" with the indexed access type
+type Region = ServerConfig["regions"][number]; // Replace "unknown" with the indexed access type
 
 // Test your implementations:
 // const servers = [

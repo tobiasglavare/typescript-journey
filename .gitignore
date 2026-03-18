@@ -1,5 +1,6 @@
 .vscode/
 .kiro/
+.claude/
 node_modules/
 dist/
 docs/.vitepress/dist/
