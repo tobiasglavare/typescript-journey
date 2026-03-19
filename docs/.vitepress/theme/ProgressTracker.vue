@@ -87,7 +87,7 @@ const percent = (ch) => ch.total === 0 ? 0 : Math.round((ch.done / ch.total) * 1
   transform: translate(-50%, -50%);
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--vp-c-text-1);
+  color: white;
 }
 
 .chapter-list {
