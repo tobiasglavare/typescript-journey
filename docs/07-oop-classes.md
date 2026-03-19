@@ -155,6 +155,9 @@ console.log(counter.#count);  // ❌ Syntax error
 ## 3. Getters and Setters
 
 Getters and setters let you expose properties with controlled access. A getter lets you compute a value on the fly (like `area` from `radius`), and a setter lets you add validation when a value is changed. From the outside they look like regular properties — `circle.radius = 10` — but behind the scenes your code runs:
+
+```typescript
+class Circle {
   private _radius: number;
   
   constructor(radius: number) {
@@ -242,6 +245,9 @@ const user = User.create("Alice", "alice@example.com");
 ## 5. Inheritance
 
 Inheritance lets you create a new class based on an existing one. The child class gets all the parent's properties and methods, and can add its own or override existing ones. This avoids duplicating code — if `Dog` and `Cat` both need a `name` and a `move()` method, put those in a shared `Animal` parent class:
+
+```typescript
+class Animal {
   constructor(public name: string) {}
   
   move(distance: number): void {
@@ -377,6 +383,9 @@ car.summary();
 ## 7. Implementing Interfaces
 
 Interfaces define a contract — "any class that implements this interface must have these methods and properties." Unlike abstract classes, a class can implement multiple interfaces. Use interfaces when you care about what something can do, not what it is. This is the foundation of dependency injection and testable code — you can swap implementations without changing the code that uses them:
+
+```typescript
+interface Printable {
   print(): void;
 }
 
@@ -434,6 +443,9 @@ abstract class BaseLogger implements Logger {
 ## 8. Generic Classes
 
 Combining generics with classes gives you reusable data structures that are fully type-safe. A `Stack<number>` only accepts numbers, a `Stack<string>` only accepts strings — but you write the implementation once. This is how most collection classes and repositories are built in real applications:
+
+```typescript
+class Stack<T> {
   private items: T[] = [];
   
   push(item: T): void {

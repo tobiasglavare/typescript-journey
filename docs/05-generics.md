@@ -234,6 +234,9 @@ const env = getProperty(server, "env");     // string
 ## 5. Generic Classes
 
 Generics aren't just for functions — classes benefit from them too. A generic class lets you build reusable data structures (like stacks, queues, repositories) that work with any type while keeping full type safety. You define the type when you create an instance, and every method on that instance knows the exact type it's working with:
+
+```typescript
+class Stack<T> {
   private items: T[] = [];
   
   push(item: T): void {
@@ -303,6 +306,9 @@ userRepo.add({ id: "1", name: "Alice", email: "alice@example.com" });
 ## 6. Default Type Parameters
 
 Sometimes a generic type has a "most common" case. Default type parameters let you provide a fallback type so callers don't have to specify it every time. It works just like default function parameters — use the default when no type is given, override it when you need something specific:
+
+```typescript
+// Default type parameter
 interface ApiResponse<T = unknown> {
   data: T;
   status: number;

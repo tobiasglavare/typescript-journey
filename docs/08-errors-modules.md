@@ -40,6 +40,9 @@ throw new SyntaxError("Invalid syntax");
 ## 2. try/catch/finally
 
 `try/catch` is how you handle errors at runtime. Wrap risky code in `try`, handle failures in `catch`, and use `finally` for cleanup that must run regardless (closing connections, releasing resources). One important TypeScript detail: the `error` in `catch` is typed as `unknown` by default, so you need to narrow it before using it:
+
+```typescript
+function parseJSON(json: string): unknown {
   try {
     return JSON.parse(json);
   } catch (error) {
@@ -91,6 +94,9 @@ function processData(data: string): Result {
 ## 3. Custom Error Classes
 
 Built-in errors like `Error` and `TypeError` are generic — they only carry a message. In a real application, you want errors that carry structured information: an HTTP status code, an error code your frontend can switch on, which field failed validation. Custom error classes let you create a hierarchy of errors that are easy to catch and handle specifically:
+
+```typescript
+// Basic custom error
 class ValidationError extends Error {
   constructor(message: string) {
     super(message);
